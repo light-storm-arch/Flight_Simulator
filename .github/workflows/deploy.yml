@@ -1,9 +1,11 @@
 name: Deploy to GitHub Pages
 
-# Build the Vite app and publish it to GitHub Pages on every push to main.
+# Build the Vite app and publish it to GitHub Pages on every push to the
+# default branch (this is the repo's only/default branch). You can also run it
+# by hand from the Actions tab via the "Run workflow" button.
 on:
   push:
-    branches: [main]
+    branches: ["claude/charming-mendel-GIXCQ"]
   workflow_dispatch:
 
 # Permissions required by the official GitHub Pages deploy actions.
